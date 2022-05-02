@@ -1,0 +1,12 @@
+{
+  "name": "Policy Violation events",
+  "type": "policy",
+  "category": "policy",
+  "extends": "event",
+  "attributes": {
+    "policy": {
+      "group": "primary",
+      "requirement": "required"
+    }
+  }
+}

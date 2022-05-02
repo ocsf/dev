@@ -1,0 +1,26 @@
+{
+  "name": "Unsuccessful Discovery",
+  "uid": 0,
+  "type": "discovery_no_result",
+  "extends": "discovery",
+  "description": "Unsuccessful Discovery events report unsuccessful attempts at Evidence of Compromise queries.",
+  "attributes": {
+    "disposition_id": {
+      "enum": {
+        "3": {
+          "name": "Does not exist"
+        },
+        "4": {
+          "name": "Error"
+        },
+        "5": {
+          "name": "Unsupported"
+        }
+      }
+    },
+    "request_obj": {
+      "requirement": "optional",
+      "group": "primary"
+    }
+  }
+}

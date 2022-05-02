@@ -1,0 +1,64 @@
+{
+  "attributes": {
+    "disposition_id": {
+      "enum": {
+        "1": {
+          "name": "Passed"
+        },
+        "2": {
+          "name": "Failed"
+        },
+        "3": {
+          "description": "The host integrity check failed, but was reported as Passed.",
+          "name": "Soft Fail"
+        }
+      }
+    },
+    "end_time": {
+      "description": "The end time of the compliance scan job.",
+      "requirement": "recommended"
+    },
+    "name": {
+      "description": "The name of the compliance scan job.",
+      "requirement": "required"
+    },
+    "schedule_uid": {
+      "requirement": "required"
+    },
+    "start_time": {
+      "description": "The start time of the compliance scan job.",
+      "requirement": "required"
+    },
+    "time": {
+      "description": "The time when the compliance scan report was created.",
+      "requirement": "required"
+    },
+    "type": {
+      "description": "The original compliance scan type."
+    },
+    "type_id": {
+      "description": "The type of compliance scan.",
+      "enum": {
+        "1": {
+          "description": "The scan was manually initiated by the user or admin.",
+          "name": "Manual"
+        },
+        "2": {
+          "description": "The scan was started based on scheduler.",
+          "name": "Scheduled"
+        }
+      },
+      "requirement": "required"
+    },
+    "uid": {
+      "description": "The unique identifier of the scan job.",
+      "name": "Scan UID",
+      "requirement": "required"
+    }
+  },
+  "description": "Compliance Scan events report the start, completion, and overall result of the scan. Detailed results are reported in individual compliance events.",
+  "extends": "policy",
+  "name": "Compliance Scan",
+  "type": "compliance_scan",
+  "uid": 2
+}

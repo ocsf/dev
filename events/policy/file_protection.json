@@ -1,0 +1,60 @@
+{
+  "attributes": {
+    "activity": {
+      "requirement": "optional"
+    },
+    "app_name": {
+      "description": "The name of the application that is associated with the file.",
+      "requirement": "optional"
+    },
+    "direction_id": {
+      "description": "The direction of the initiated file transfer.",
+      "group": "primary",
+      "requirement": "optional",
+      "enum": {
+        "3": {
+          "description": "Local, on the same endpoint.",
+          "name": "Local"
+        },
+        "4": {
+          "description": "Internal, between two endpoints inside network.",
+          "name": "Internal"
+        },
+        "5": {
+          "description": "External, between two endpoints on the Internet or outside the network.",
+          "name": "External"
+        }
+      }
+    },
+    "file": {
+      "description": "The file that triggered the detection.",
+      "group": "primary",
+      "requirement": "required"
+    },
+    "first_seen_time": {
+      "group": "occurrence",
+      "requirement": "recommended"
+    },
+    "scan_name": {
+      "group": "primary",
+      "requirement": "recommended"
+    },
+    "scan_type": {
+      "group": "primary",
+      "requirement": "recommended"
+    },
+    "scan_uid": {
+      "group": "primary",
+      "requirement": "recommended"
+    },
+    "sender_email": {
+      "group": "primary",
+      "requirement": "optional"
+    }
+  },
+  "description": "File Content Protection events report the detection and resolution of file content policy violations.",
+  "extends": "information_protection",
+  "name": "File Content Protection",
+  "type": "file_content_protection",
+  "uid": 4
+}

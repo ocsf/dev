@@ -1,0 +1,13 @@
+{
+  "name": "Service Remediation",
+  "uid": 10,
+  "type": "service_remediation_result",
+  "extends": "remediation_result",
+  "description": "Service Remediation events report service remediation activity.",
+  "attributes": {
+    "os_service": {
+      "requirement": "required",
+      "group": "primary"
+    }
+  }
+}

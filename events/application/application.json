@@ -1,0 +1,7 @@
+{
+  "name": "Application Activity",
+  "type": "application",
+  "category": "application",
+  "extends": "event",
+  "attributes": {}
+}

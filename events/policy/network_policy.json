@@ -1,0 +1,32 @@
+{
+  "name": "Network Policy Violation",
+  "uid": 6,
+  "type": "network_policy",
+  "extends": "policy",
+  "description": "Network Policy events report the detection and resolution of network policy violations.",
+  "attributes": {
+    "connection": {
+      "requirement": "required",
+      "group": "primary"
+    },
+    "disposition_id": {
+      "enum": {
+        "1": {
+          "name": "Allowed"
+        },
+        "2": {
+          "name": "Blocked"
+        },
+        "3": {
+          "name": "Dropped"
+        },
+        "4": {
+          "name": "Deleted"
+        },
+        "5": {
+          "name": "Isolated"
+        }
+      }
+    }
+  }
+}

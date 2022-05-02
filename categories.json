@@ -1,0 +1,32 @@
+{
+  "name": "New Categories",
+  "type": "category",
+  "description": "The new event categories.",
+  "attributes": {
+    "policy": {
+      "name": "Policy",
+      "description": "Policy events report policy violations.",
+      "uid": 1
+    },
+   "discovery": {
+      "name": "Discovery",
+      "description": "Discovery events report the existence of devices, files, processes, registry keys, and other objects.",
+      "uid": 2
+    },
+    "remediation": {
+      "name": "Remediation",
+      "description": "Remediation events report the results the remediation status of files, processes, registry keys, and other objects.",
+      "uid": 3
+    },
+    "application": {
+      "name": "Application",
+      "description": "Application Lifecycle events report detailed information about the behavior of applications and services.",
+      "uid": 4
+    },
+    "diagnostic": {
+      "name": "Diagnostic",
+      "description": "Diagnostic events report status, errors, and performance statistics of a service or application.",
+      "uid": 5
+    }
+  }
+}
