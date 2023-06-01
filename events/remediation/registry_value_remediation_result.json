@@ -1,13 +1,13 @@
 {
+  "caption": "Registry Value Remediation",
+  "description": "Registry Value Remediation events report registry value remediation activity.",
+  "extends": "remediation_result",
+  "name": "registry_value_remediation_result",
+  "uid": 8,
   "attributes": {
-    "reg_value": {
+    "win/reg_value": {
       "group": "primary",
       "requirement": "required"
     }
-  },
-  "description": "Registry Value Remediation events report registry value remediation activity.",
-  "extends": "remediation_result",
-  "caption": "Registry Value Remediation",
-  "name": "registry_value_remediation_result",
-  "uid": 8
+  }
 }

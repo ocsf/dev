@@ -1,13 +1,13 @@
 {
+  "caption": "Registry Key Info",
+  "description": "Registry Key Info events report information about Windows registry keys.",
+  "extends": "discovery_result",
+  "name": "registry_key_info",
+  "uid": 12,
   "attributes": {
-    "reg_key": {
+    "win/reg_key": {
       "group": "primary",
       "requirement": "required"
     }
-  },
-  "description": "Registry Key Info events report information about Windows registry keys.",
-  "extends": "discovery_result",
-  "caption": "Registry Key Info",
-  "name": "registry_key_info",
-  "uid": 12
+  }
 }
